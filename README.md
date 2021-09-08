@@ -1,6 +1,7 @@
-[![Build Status](https://dev.azure.com/USTG/ADOTraining/_apis/build/status/Lohith1998.pipelines-java?branchName=master)](https://dev.azure.com/USTG/ADOTraining/_build/latest?definitionId=94&branchName=master)
 
 # Contributing
+
+[![Build Status](https://dev.azure.com/USTG/ADOTraining/_apis/build/status/Lohith1998.pipelines-java?branchName=master)](https://dev.azure.com/USTG/ADOTraining/_build/latest?definitionId=94&branchName=master)
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
