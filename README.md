@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/USTG/ADOTraining/_apis/build/status/Lohith1998.pipelines-java?branchName=master)](https://dev.azure.com/USTG/ADOTraining/_build/latest?definitionId=94&branchName=master)
 
 # Contributing
 
