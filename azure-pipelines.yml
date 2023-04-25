@@ -36,7 +36,7 @@ pool:
 
 variables:
   ImageName: 'wolfgangofner/microservicedemo:$(Build.BuildId)'
-  
+
 steps:
 - task: Maven@3
   inputs:
@@ -49,15 +49,3 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-steps:
-- task: Docker@1
-  displayName: 'Build the Docker image'
-  inputs:
-    containerregistrytype: 'Container Registry'
-    dockerRegistryEndpoint: 'Docker Hub'
-    command: 'Build an image'
-    dockerFile: '**/Dockerfile'
-    imageName: '$(ImageName)'
-    includeLatestTag: true
-    useDefaultContext: false
-    buildContext: '.'
