@@ -30,12 +30,13 @@ steps:
 
 trigger:
 - master
-
-variables:
-  ImageName: 'wolfgangofner/microservicedemo:$(Build.BuildId)' 
+ 
 pool:
   vmImage: ubuntu-latest
 
+variables:
+  ImageName: 'wolfgangofner/microservicedemo:$(Build.BuildId)'
+  
 steps:
 - task: Maven@3
   inputs:
