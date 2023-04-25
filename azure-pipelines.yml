@@ -5,7 +5,10 @@
 
 trigger:
 - master
- 
+
+variables:
+  ImageName: '172054/microservicedemo:$(Build.BuildId)' 
+
 pool:
   vmImage: ubuntu-latest
 
@@ -20,6 +23,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
 - task: Docker@1
   displayName: 'Build the Docker image'
   inputs:
@@ -27,7 +31,7 @@ steps:
     dockerRegistryEndpoint: 'Docker Hub'
     command: 'Build an image'
     dockerFile: '**/Dockerfile'
-    imageName: 'lohith'
+    imageName: '$(ImageName)'
     includeLatestTag: true
     useDefaultContext: false
     buildContext: '.'
